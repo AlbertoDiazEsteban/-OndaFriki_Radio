@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alberto, Robert, Yolanda, Vanessa y Olga"/>
+    <meta name="description" content="página web de radio local OndaFriki" keywords="música, radio, años70, años80, años90, eventos musicales, Queen, Whitney Houston, The Police, Abba, David Bowie, John Lennon"/>
+    <title>Instrumentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <header>
+        <img class="logo" alt="logo" src="img/logo.png">
+        <nav>
+            <a href="index.html" target="">Home</a>
+            <a href="artistas.html" target="">Artistas</a>
+            <a href="eventos.html" target="">Eventos</a>
+            <a href="instrumentos.html" target="">Instrumentos</a>
+        </nav>
+    </header>
+
+
+<br><br><br><br><br><br><br><br><br>
+    <h1>Soy el Xilopiano de OndaRadio</h1>
+    <h4 style="text-align: center; font-size: 18px;">Puedes tocarme bien fuerte!</h4>
+
+    <div class="xilofono">
+        <!-- do -->
+        <div class="nota do" onclick="document.getElementById('do').play()">
+            <audio id="do" autoplay hidden>
+                <source src="audio/do-stretched.wav"/>
+            </audio>
+        </div>  
+        <!-- re -->
+        <div class="nota re" onclick="document.getElementById('re').play()">
+            <audio id="re" autoplay hidden>
+                <source src="audio/re-stretched.wav"/>
+            </audio>
+        </div>
+        <!-- mi -->
+        <div class="nota mi" onclick="document.getElementById('mi').play()">
+            <audio id="mi" autoplay hidden>
+                <source src="audio/mi-stretched.wav"/>
+            </audio>
+        </div>
+        <!-- fa -->
+        <div class="nota fa" onclick="document.getElementById('fa').play()">
+            <audio id="fa" autoplay hidden>
+                <source src="audio/fa-stretched.wav"/>
+            </audio>
+        </div>
+        <!-- sol -->
+        <div class="nota sol" onclick="document.getElementById('sol').play()">
+            <audio id="sol" autoplay hidden>
+                <source src="audio/sol-stretched.wav"/>
+            </audio>
+        </div>
+        <!-- sol -->
+        <div class="nota la" onclick="document.getElementById('la').play()">
+            <audio id="la" autoplay hidden>
+                <source src="audio/la-stretched.wav"/>
+            </audio>
+        </div>
+        <!-- si -->
+        <div class="nota si" onclick="document.getElementById('si').play()">
+            <audio id="si" autoplay hidden>
+                <source src="audio/do-stretched-octave.wav"/>
+            </audio>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="index.html">Nosotros</a></li>
+                        <li><a href="index.html">Contacto</a></li>
+                        <li><a href="index.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Artistas</h4>
+                    <ul>
+                        <li><a href="artistas.html#setenta">70's</a></li>
+                        <li><a href="artistas.html#ochenta">80's</a></li>
+                        <li><a href="artistas.html#noventa">90's</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Eventos</h4>
+                    <ul>
+                        <li><a href="eventos.html">2022</a></li>
+                        <li><a href="eventos.html">2023</a></li>
+                        <li><a href="eventos.html">2024</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 RadioFriki - <i>¡Música para tus oídos y tu lado geek!</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

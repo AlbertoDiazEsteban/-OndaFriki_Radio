@@ -1,0 +1,396 @@
+.losColores_de_la_web {
+    color: #ff5c5c; /* red */
+    color: #e2f1f4; /* color claro */
+    color: #100341; /* azul marino */
+    color: #5cffff; /* azul claro */
+    color: #ffae5c; /* naranja */
+}
+* { max-width: 100%; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gillsans;
+    color: #100341;
+    background-color: #e2f1f4;
+}
+
+/*  -----Header------  */
+header {
+    background-color: #100341;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 40px);
+    z-index: 10;
+    top: 0;
+}
+header nav a {
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #e2f1f4;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+header nav a:hover {
+    background-color: rgba(226, 241, 244, 0.2);
+}
+header .logo {
+    height: 50px;
+    transform: scale(1.5);
+}
+
+
+/*    Header de las decadas  */
+.decadas {
+    background: linear-gradient(to bottom right, #ff5c5c, #ffae5c);
+    color: #100341;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 40px);
+    z-index: 11;
+    top: 90px;
+}
+.decadas a {
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 10px;
+    color: #100341;
+    text-decoration: none !important;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h4 {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Calendario */
+td {
+    width: 85px;
+    border: 1px solid #100341;
+}
+
+/* cards de evento */
+.evento {
+    height: 300px;
+    width: 95%;
+    margin: -10px 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, #e2f1f4, #ffae5c);
+    color: #100341;
+    transition: 3s ease;
+}
+.evento:hover {
+    background: linear-gradient(to bottom right, #ff5c5c, #ffae5c);
+    text-shadow: 0px 0px 20px #ffae5c;
+}
+.linkEvento {
+    padding-top: 80px;
+}
+.imgEvento {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+}
+.textEvento {
+    width: 40%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.dirEvento {
+    width: 25%;
+    height: 300px;
+    background-color: #e2f1f4;
+}
+.direction {
+    text-align: right;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+.evento time {
+    margin: auto;
+    padding: 7px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e2f1f4;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #100341;
+    border: 1.5px solid #100341;
+}
+.evento mark {
+    margin-top: -30px;
+    padding: 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+.evento mark:hover {
+    background-color: #fff;
+    color: #ff5c5c;
+    border: 1.5px solid #ff5c5c;
+    cursor: pointer;
+}
+
+/* Artistas */
+.decada-setentas {
+    padding-top: 180px;
+    padding-bottom: -250px !important;
+}
+.decada-ochentas {
+    padding-top: 180px;
+    padding-bottom: -250px !important;
+}
+.decada-noventas {
+    padding-top: 180px;
+    padding-bottom: -250px !important;
+}
+.artista {
+    width: 80%; 
+    height: 380px; 
+    margin: 30px auto;
+    background: linear-gradient(to top right, #e2f1f4, #ffae5c);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.artista:hover {
+    transform: scale(1.05);
+}
+hr {
+    width: 80%;
+    border-radius: 10px;
+    border:2px solid darkred;
+    margin: 10px auto;
+}
+.imagenartista {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenido {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.biografia {
+    font-size: 13px;
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+    .artista { flex-direction: column; height: auto; padding-bottom: 10px;}
+    .imagenartista { width: 100%; margin: 0 auto;}
+    .contenido { width: 80%; }
+    .alReves {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+video {
+    margin-top: 70px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+table {
+    transform: scale(0.9);
+}
+.evolucionBanner {
+    margin-top: -5px;
+    padding-top: 20px; 
+    background: linear-gradient(to bottom right, #ff5c5c, #ffae5c);
+}
+.evolucion {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.evolucion li {
+    background-color: aqua;
+    width: 200px;
+    padding: 5px;
+    color: #100341;
+}
+.evolucion caption {
+    padding: 20px;
+}
+.evolucion ul {
+    background-color: blueviolet;
+    width: 240px;
+    color: #e2f1f4;
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+
+/* xilofono */
+.xilofono {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: rotate(10deg);
+    margin-bottom: 100px;
+}
+.nota {
+
+    width: 80px;
+    border-radius: 20px;
+    box-shadow: 
+    inset -6px -6px 0px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 10px rgba(255, 255, 255, 0.2),
+    0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.do {
+    height: 200px;
+    background-color: #ff5c5c;
+}
+.re {
+    height: 250px;
+    background-color: #5cffff;
+}
+.mi {
+    height: 300px;
+    background-color: #100341;
+}
+.fa {
+    height: 350px;
+    background-color: #ffae5c;
+}
+.sol {
+    height: 400px;
+    background-color: #ff5c5c;
+}
+.la {
+    height: 450px;
+    background-color: #5cffff;
+}
+.si {
+    height: 500px;
+    background-color: #100341;
+}
+
+
+
+/* Sobre nosotros */
+.sobreNosotros{
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 80px;
+    background-color: #ffae5c;
+    padding: 10px;
+    width: 680px;
+    height: auto;
+    border-radius: 10px;
+    color: #100341;
+}
+.sobreNosotros h1{
+    font-family: "Gillsans";
+    font-size:36px;
+    text-align:center;
+    color: #100341;
+}
+.sobreNosotros h2{ font-family: "Gillsans";
+    font-size:28px; 
+    text-align:center;
+    color: #100341;
+}
+.sobreNosotros p{font-family: "Gillsans";
+    font-size:18px; 
+    text-align:justify;
+    color: #100341;
+   padding: 25px;
+}
+.sobreNosotros .aboutText{
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+}
+.sobreNosotros p{
+    text-align: left;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* footer */
+.footer {
+    background-color: #100341;
+}
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.footer-links {
+    width: 25%;
+    padding: 0 15px; 
+}
+.footer-links h4 {
+    font-size: 20px;
+    color: #e2f1f4;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 10px;
+}
+.footer-links ul li {
+    padding-top: 10px;
+}
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e2e2e2;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover {
+    color: #e2e2e2;
+    padding-left: 6px;
+}
+.footer-info {
+    margin-top: 150px;
+    background: linear-gradient(to bottom right, #ff5c5c, #ffae5c);
+    margin-top: 30px;
+    color: #100341;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+}
